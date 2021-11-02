@@ -10,8 +10,5 @@ app.get('/', (req, res) => {
 });
 
 
-
-
-
 const port = process.env.PORT || 8082;
 app.listen(port, () => console.log(`Listening to port ${port}`));
