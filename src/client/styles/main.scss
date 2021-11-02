@@ -1,0 +1,60 @@
+@import 'variables.scss';
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    font-family: $font-stack;
+}
+
+body{
+    background-image: url('../media/Language\ Anaylisis\ Background\ Image-01.png');
+    background-repeat: no-repeat;
+}
+
+.form-wrapper{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $white-color;
+    margin-top: 3rem;
+    padding: 6rem 2rem;
+    box-shadow: 11px 18px 28px -11px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0,0,0, 0.1);
+
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 58%;
+        margin: 0 auto;
+
+        #url{
+            border-radius: 40px;
+            border: 1px solid $grey-color;
+            padding: 0.5rem 0;
+            margin-bottom: 1rem;
+        }
+
+        button{
+            width: 50%;
+            margin: 0 auto;
+            background-color: $black-color;
+            color: $white-color;
+            border: none;
+            border-radius: 40px;
+            padding: 0.5rem 0;
+            cursor: pointer;
+        }
+    }
+}

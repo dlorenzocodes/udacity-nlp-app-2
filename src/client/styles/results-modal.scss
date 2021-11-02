@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+.result-wrapper{
+    display: none;
+    width: 60%;
+    margin: 0 auto;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    text-align: left;
+    background-color: $white-color;
+    box-shadow: 11px 18px 28px -11px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0,0,0, 0.1);
+
+    &.show{
+        display: block;
+    }
+
+    h2{
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    ul{
+        list-style: none;
+
+        li{
+            padding-bottom: 0.4rem;
+            font-weight: $font-bold;
+
+            span{
+                text-transform: lowercase;
+                font-weight: $font-regular;
+            }
+        }
+    }
+}
