@@ -26,6 +26,6 @@ export async function updateUi(){
         resultWrapper.classList.add('show');
         resultWrapper.innerHTML = html;
     }catch(error){
-        alert(`Error: ${error}`);
+        console.log(error);
     }
 }
