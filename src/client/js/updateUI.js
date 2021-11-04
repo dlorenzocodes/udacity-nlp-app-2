@@ -1,4 +1,6 @@
 const resultWrapper = document.querySelector('.result-wrapper');
+const loading = document.querySelector('#loading');
+
 
 export async function updateUi(){
     const response = await fetch('http://localhost:8082/getData');
@@ -9,6 +11,11 @@ export async function updateUi(){
         if(data.status.code != 0) {
             alert(data.status.msg);
             return;
+        }
+
+        
+        if(response.ok) {
+            loading.classList.remove('show');
         }
 
         let html = '';

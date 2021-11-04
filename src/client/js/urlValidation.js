@@ -5,7 +5,7 @@ export function validateURL(url){
         alert('Field cannot be empty. Please enter an URl!');
         return false;
     } else if(validate === false){
-        alert('Invalid URl. Please enter a vaild URl!');
+        alert('Invalid URl. URl must start with http:// or https://. Please enter a vaild URl!');
         return false;
     }
 }
