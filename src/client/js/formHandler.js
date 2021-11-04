@@ -23,4 +23,5 @@ export async function postURl(){
         body: JSON.stringify(dataObj)
     });
     updateUi();
+    inputURl.value = '';
 }

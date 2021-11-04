@@ -1,3 +1,4 @@
+
 export function validateURL(url){
     const rgx = /^(http(s)?:\/\/)/g;
     const validate = rgx.test(url);

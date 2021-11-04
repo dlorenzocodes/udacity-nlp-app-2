@@ -10,6 +10,7 @@ export async function updateUi(){
 
         if(data.status.code != 0) {
             alert(data.status.msg);
+            loading.classList.remove('show');
             return;
         }
 
